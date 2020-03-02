@@ -15,6 +15,34 @@
 
 <body>
 
+    <div class="popup">
+    	<div class="popup-window popup-optimization">
+    		<form>
+    			<h2>УЗНАЙТЕ, КАК "САНАТОРИУМ" ОПТИМИЗИРУЕТ ВАШУ РАБОТУ</h2>
+    			<div class="half-content">
+    				<p>Запишитесь на бесплатную презентацию в Skype. Она займет не более часа.</p>
+    			</div>
+    			<div class="half-content half-input">
+    				<input type="text" required="" placeholder="Введите Ваше имя" name="">
+    				<input type="number" required="" placeholder="Введите Ваш телефон" name="">
+    			</div>
+    			<div class="checkbox">
+    				<input type="checkbox" required="" id="chk2" data-jcf='{"checkedClass": "cheked", "wrapNative": false}'>
+    				<label title="Checked state" for="chk2" class="jcf-label-active">Я подтверждаю свое согласие на обработку моих персональных данных. ознакомиться с соглашением</label>
+    			</div>
+    			<button>Записаться на консультацию</button>
+    			<div class="close"></div>
+    		</form>
+    	</div>
+  
+    	<div  class="popup-window my_video">
+
+				<iframe width="100%" height="500" src="https://www.youtube.com/embed/bhXZiG4bsjA?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+			<div class="close"></div>
+    	</div>
+    </div>
+
     <header>
     	<div class="container">
     		<a class="logo" href="javascript:void(0)"><img src="../img/logo.png" alt=""></a>
@@ -59,14 +87,18 @@
         	<div class="circle">
         		<span class="border"></span>
         		<span class="video1">
-        			<span class="video2"></span>
+        			<span class="video2 popup-open" data-popup="my_video"></span>
         		</span>
         		<p>Санаториум за 75 секунд</p>
         	</div>
         	<div class="pulse"><img src="../img/pulse.png"></div>	
     	</div>
         
-		<div class="banner-img" style="background: url('../img/first-blok.png') no-repeat 50% 50%; background-size: cover;background-position-y: -122px;"></div>
+		<div class="banner-img" style="background: url('../img/first-blok.png') no-repeat 50% 50%; background-size: 100% 100% ;"></div>
+		<div class="paralax-element1"></div>
+		<div class="paralax-element2"></div>
+		<div class="paralax-element3"></div>
+		<div class="paralax-second"></div>
     </section>
 
     <section class="navigation">
@@ -197,7 +229,7 @@
    				
    			</div>
    		</div>
-
+   		<div class="paralax-element4"></div>
     </section>
 
     <section class="introduce">
@@ -206,33 +238,368 @@
     		<div class="content-introduce">
     			<h2>Хотите внедрить систему в своем санатории?</h2>
     			<p>Поможем с обоснованием для вашего руководства.</p>
-    			<a class="introduce-button" href="javascript:void(0)">Рассчитать стоимость и сроки окупаемости</a>
+    			<a class="introduce-button popup-open" data-popup="popup-optimization" href="javascript:void(0)">Рассчитать стоимость и сроки окупаемости</a>
     			<div class="introduce-note" style="background: url(../img/med-note.png)no-repeat 50% 50%;">
     				
     			</div>
     		</div>
     	</div>
-    	
+    	<div class="paralax-element1"></div>
+    	<div class="paralax-element2"></div>
+    	<div class="paralax-element3"></div>
     </section>
 
     <section class="automation">
+        
+      	<div class="container-automation">	
+        	<h2>Автоматизация от брони до отчетности</h2>
+        </div>
+        <div class="automation-tabs">
+        	<div class="container-automation">
+        		<div class="tabs" data-index='1'>
+        			<ul>
+        				<li><a class="active" href="javascript:void(0)" data-index='1'><img src="../img/tab1.png"></a></li>
+        				<li><a href="javascript:void(0)" data-index='2'><img src="../img/tab2.png"></a></li>
+        				<li><a href="javascript:void(0)" data-index='3'><img src="../img/tab3.png"></a></li>
+        				<li><a href="javascript:void(0)" data-index='4'><img src="../img/tab4.png"></a></li>
+        				<li><a href="javascript:void(0)" data-index='5'><img src="../img/tab5.png"></a></li>
+        				<li><a href="javascript:void(0)" data-index='6'><img src="../img/tab6.png"></a></li>
+        				<li><a href="javascript:void(0)" data-index='7'><img src="../img/tab7.png"></a></li>
+        				<li><a href="javascript:void(0)" data-index='8'><img src="../img/tab8.png"></a></li>
+        			</ul>
+        			<div class="buttons" data-index='1'>
+        				<a class="btn btn-prev" href="javascript:void(0)"></a>
+        				<a class="btn btn-next active" href="javascript:void(0)"></a>
+        			</div>
+        			<div class="tab-content">
+        				<div id="tab-1" class="tab-content_tab active" style="background-image: url('../img/ilustration1.svg')">
+        					<div class="tab-cloud">
+        						<h3>Self Check-in</h3>
+        						<p>
+        							 Самостоятельная регистрация из дома: выбор номера на 3D-визуализации, знакомство с территорией и расположением корпусов. Платные опции для дополнительной прибыли: трансфер, повышение категории, дополнительные медицинские услуги, доступ в СПА-зону (бассейн/сауна), тренажерный зал, питание, аренда оборудования (велосипеды, ролики), выбор времени прихода горничной, меню, подушек, заказ экскурсий.
+        						</p>
+        					</div>
+        				</div>
+        				<div id="tab-2" class="tab-content_tab" style="background-image: url('../img/ilustration2.svg')">
+        					<div class="tab-cloud">
+        						<h3>Self Check-in</h3>
+        						<p>
+        							 Самостоятельная регистрация из дома: выбор номера на 3D-визуализации, знакомство с территорией и расположением корпусов. Платные опции для дополнительной прибыли: трансфер, повышение категории, дополнительные медицинские услуги, доступ в СПА-зону (бассейн/сауна), тренажерный зал, питание, аренда оборудования (велосипеды, ролики), выбор времени прихода горничной, меню, подушек, заказ экскурсий.
+        						</p>
+        					</div>
+        				</div>
+        				<div id="tab-3" class="tab-content_tab" style="background-image: url('../img/ilustration3.svg')">
+        					<div class="tab-cloud">
+        						<h3>Self Check-in</h3>
+        						<p>
+        							 Самостоятельная регистрация из дома: выбор номера на 3D-визуализации, знакомство с территорией и расположением корпусов. Платные опции для дополнительной прибыли: трансфер, повышение категории, дополнительные медицинские услуги, доступ в СПА-зону (бассейн/сауна), тренажерный зал, питание, аренда оборудования (велосипеды, ролики), выбор времени прихода горничной, меню, подушек, заказ экскурсий.
+        						</p>
+        					</div>
+        				</div>
+        				<div id="tab-4" class="tab-content_tab" style="background-image: url('../img/ilustration4.svg')">
+        					<div class="tab-cloud">
+        						<h3>Self Check-in</h3>
+        						<p>
+        							 Самостоятельная регистрация из дома: выбор номера на 3D-визуализации, знакомство с территорией и расположением корпусов. Платные опции для дополнительной прибыли: трансфер, повышение категории, дополнительные медицинские услуги, доступ в СПА-зону (бассейн/сауна), тренажерный зал, питание, аренда оборудования (велосипеды, ролики), выбор времени прихода горничной, меню, подушек, заказ экскурсий.
+        						</p>
+        					</div>
+        				</div>
+        				<div id="tab-5" class="tab-content_tab" style="background-image: url('../img/ilustration1.svg')">
+        					<div class="tab-cloud">
+        						<h3>Self Check-in</h3>
+        						<p>
+        							 Самостоятельная регистрация из дома: выбор номера на 3D-визуализации, знакомство с территорией и расположением корпусов. Платные опции для дополнительной прибыли: трансфер, повышение категории, дополнительные медицинские услуги, доступ в СПА-зону (бассейн/сауна), тренажерный зал, питание, аренда оборудования (велосипеды, ролики), выбор времени прихода горничной, меню, подушек, заказ экскурсий.
+        						</p>
+        					</div>
+        				</div>
+        				<div id="tab-6" class="tab-content_tab" style="background-image: url('../img/ilustration2.svg')">
+        					<div class="tab-cloud">
+        						<h3>Self Check-in</h3>
+        						<p>
+        							 Самостоятельная регистрация из дома: выбор номера на 3D-визуализации, знакомство с территорией и расположением корпусов. Платные опции для дополнительной прибыли: трансфер, повышение категории, дополнительные медицинские услуги, доступ в СПА-зону (бассейн/сауна), тренажерный зал, питание, аренда оборудования (велосипеды, ролики), выбор времени прихода горничной, меню, подушек, заказ экскурсий.
+        						</p>
+        					</div>
+        				</div>
+        				<div id="tab-7" class="tab-content_tab" style="background-image: url('../img/ilustration3.svg')">
+        					<div class="tab-cloud">
+        						<h3>Self Check-in</h3>
+        						<p>
+        							 Самостоятельная регистрация из дома: выбор номера на 3D-визуализации, знакомство с территорией и расположением корпусов. Платные опции для дополнительной прибыли: трансфер, повышение категории, дополнительные медицинские услуги, доступ в СПА-зону (бассейн/сауна), тренажерный зал, питание, аренда оборудования (велосипеды, ролики), выбор времени прихода горничной, меню, подушек, заказ экскурсий.
+        						</p>
+        					</div>
+        				</div>
+        				<div id="tab-8" class="tab-content_tab" style="background-image: url('../img/ilustration4.svg')">
+        					<div class="tab-cloud">
+        						<h3>Self Check-in</h3>
+        						<p>
+        							 Самостоятельная регистрация из дома: выбор номера на 3D-визуализации, знакомство с территорией и расположением корпусов. Платные опции для дополнительной прибыли: трансфер, повышение категории, дополнительные медицинские услуги, доступ в СПА-зону (бассейн/сауна), тренажерный зал, питание, аренда оборудования (велосипеды, ролики), выбор времени прихода горничной, меню, подушек, заказ экскурсий.
+        						</p>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>	
+        	 <div class="paralax-element2"></div>
+    		<div class="paralax-element4"></div>
+        </div>
+        <div class="rating">
+        	<div class="rating-container">
+        		<h2>Оцените <img src="../img/logo2.png"> в действии</h2>
+        		<p>
+        			Запишитесь на бесплатную презентацию в Skype. Займет не более часа.
+        		</p>
+        		<a class="btn-sign_up" href="javascript:void(0)">Записаться</a>
+        		<div class="check-pic" style="background-image: url(../img/check.svg);"></div>
+        	</div>
+        	
+        </div>
         
 
     </section>
 
     <section class="blog">
         
+        <div class="container">
+        	<h2>Блог «Санаториум»</h2>
+        	<nav class="heading">
+        		<ul>
+	        		<li><a href="javascript:void(0)">#директору</a></li>
+	        		<li><a href="javascript:void(0)">#маркетологу</a></li>
+	        		<li><a href="javascript:void(0)">#врачу</a></li>
+	        	</ul>
+        	</nav>
+        	<div class="news">
+        		<div class="new-table">
+        			<div class="new">
+        				<div class="picture" style="background: url('../img/blog1.png')no-repeat;background-size: cover;">
+        					<h2>Заголовок новости 1</h2>
+        				</div>
+        				<div class="content">
+        					<p>
+        						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+        					</p>
+        				</div>
+        				<a class="bth more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="new-table">
+        			<div class="new">
+        				<div class="picture" style="background: url('../img/blog1.png')no-repeat;background-size: cover;">
+        					<h2>Заголовок новости 1</h2>
+        				</div>
+        				<div class="content">
+        					<p>
+        						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+        					</p>
+        				</div>
+        				<a class="bth more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="new-table">
+        			<div class="new">
+        				<div class="picture" style="background: url('../img/blog1.png')no-repeat;background-size: cover;">
+        					<h2>Заголовок новости 1</h2>
+        				</div>
+        				<div class="content">
+        					<p>
+        						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+        					</p>
+        				</div>
+        				<a class="bth more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="new-table">
+        			<div class="new">
+        				<div class="picture" style="background: url('../img/blog1.png')no-repeat;background-size: cover;">
+        					<h2>Заголовок новости 1</h2>
+        				</div>
+        				<div class="content">
+        					<p>
+        						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+        					</p>
+        				</div>
+        				<a class="bth more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="new-table">
+        			<div class="new">
+        				<div class="picture" style="background: url('../img/blog1.png')no-repeat;background-size: cover;">
+        					<h2>Заголовок новости 1</h2>
+        				</div>
+        				<div class="content">
+        					<p>
+        						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+        					</p>
+        				</div>
+        				<a class="bth more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="new-table">
+        			<div class="new">
+        				<div class="picture" style="background: url('../img/blog1.png')no-repeat;background-size: cover;">
+        					<h2>Заголовок новости 1</h2>
+        				</div>
+        				<div class="content">
+        					<p>
+        						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+        						asdasdasd
+        					</p>
+        				</div>
+        				<a class="bth more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        	</div>
+        	<a class="show_more" href="javascript:void(0)">Показать ещё</a>
+        </div>
 
     </section>
 
     <section class="benefit">
         
-
+        <div class="container">
+        	<h2>Приносим пользу клиентам из СНГ и Европы</h2>
+        	<ul>
+        		<li>7 стран</li>
+        		<li>137 объектов</li>
+        	</ul>
+        </div>
+        <div class="benefit-reviews">
+        	<h2>Результаты «Санаториум» в цифрах:</h2>
+        	<div class="reviews">
+        		<div class="review">
+        			<div class="rewiev-width">
+        				
+        			</div>
+        		</div>
+        		<div class="review">
+        			<div class="rewiev-content rewiev-width">
+        				<div class="img" style="background: url(../img/review.png)no-repeat 50% 50%;"></div>
+        				<div class="name">
+        					<h2>Иванов Иван Иванович</h2>
+        					<span class="position">Директор санатория</span>
+        				</div>
+        				<div class="rewiev-text">
+        					<p>
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+	        				<p> 
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+        				</div>
+        				
+        				<a class="btn more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="review">
+        			<div class="rewiev-content rewiev-width">
+        				<div class="img" style="background: url(../img/review.png)no-repeat 50% 50%;"></div>
+        				<div class="name">
+        					<h2>Иванов Иван Иванович</h2>
+        					<span class="position">Директор санатория</span>
+        				</div>
+        				<div class="rewiev-text">
+        					<p>
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+	        				<p> 
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+        				</div>
+        				<a class="btn more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="review">
+        			<div class="rewiev-content rewiev-width">
+        				<div class="img" style="background: url(../img/review.png)no-repeat 50% 50%;"></div>
+        				<div class="name">
+        					<h2>Иванов Иван Иванович</h2>
+        					<span class="position">Директор санатория</span>
+        				</div>
+        				<div class="rewiev-text">
+        					<p>
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+	        				<p> 
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+        				</div>
+        				<a class="btn more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="review">
+        			<div class="rewiev-content rewiev-width">
+        				<div class="img" style="background: url(../img/review.png)no-repeat 50% 50%;"></div>
+        				<div class="name">
+        					<h2>Иванов Иван Иванович</h2>
+        					<span class="position">Директор санатория</span>
+        				</div>
+        				<div class="rewiev-text">
+        					<p>
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+	        				<p> 
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+        				</div>
+        				<a class="btn more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="review">
+        			<div class="rewiev-content rewiev-width">
+        				<div class="img" style="background: url(../img/review.png)no-repeat 50% 50%;"></div>
+        				<div class="name">
+        					<h2>Иванов Иван Иванович</h2>
+        					<span class="position">Директор санатория</span>
+        				</div>
+        				<div class="rewiev-text">
+        					<p>
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+	        				<p> 
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+        				</div>
+        				<a class="btn more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        		<div class="review">
+        			<div class="rewiev-content rewiev-width">
+        				<div class="img" style="background: url(../img/review.png)no-repeat 50% 50%;"></div>
+        				<div class="name">
+        					<h2>Иванов Иван Иванович</h2>
+        					<span class="position">Директор санатория</span>
+        				</div>
+        				<div class="rewiev-text">
+        					<p>
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+	        				<p> 
+	        					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta diam semper, tempus ligula eget, pharetra nibh.
+	        				</p>
+        				</div>
+        				<a class="btn more" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="paralax-element1"></div>
+    		<div class="paralax-element2"></div>
+        </div>
     </section>
 
     <section class="discover">
         
-
+        <div class="discover-content">
+        	<div class="know">
+        		<p>
+        			<strong>Узнать</strong> сколько будет стоить проект
+        		</p>
+        	</div>
+        	<div class="ask">
+        		<p>Как окупить автоматизацию за 1 сезон</p>
+        		<a class="btn more more_discover" href="javascript:void(0)">ПОДРОБНЕЕ</a>
+        	</div>
+        </div>
+        <div class="paralax-element6"></div>
     </section>
 
     <footer>
@@ -290,7 +657,8 @@
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/slick.js"></script>
-    <script src="../js/script.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/home.min.js"></script>
 
 </body>
